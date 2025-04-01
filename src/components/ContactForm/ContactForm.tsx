@@ -21,7 +21,7 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<FormDataModel> = async (data) => {
     try {
-      const response = await fetch("/.netlify/functions/contact'", {
+      const response = await fetch("/.netlify/functions/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
